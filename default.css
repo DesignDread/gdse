@@ -63,7 +63,7 @@ img {
     font-family: 'Dancing Script', sans-serif;
 }
 
-.info >* {
+.info {
     padding: 2.5rem;
 }
 
@@ -86,11 +86,23 @@ img {
     list-style: square;
 }
 
+.history-events {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.history-events >* {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .past-events{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 2.5rem;
+    /* padding: 2.5rem; */
+    overflow: scroll;
+    width: 100%;
 }
 
 .event{
@@ -283,13 +295,15 @@ footer li:last-child {
     overflow: hidden;
     align-items: flex-start;
     background-color: var(--gray-color);
-    padding: 2rem;
+    /* padding: 2rem; */
+    background-color: #555;
 }
 
 .carousel-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
     gap: 8rem;
+
     /* align-self: center; */
     /* justify-content: center; */
 
