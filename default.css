@@ -378,3 +378,50 @@ font-size: medium;
     height: 13rem;
     border-radius: 50%;
 }
+
+
+.headings{
+    padding-top: 4rem;
+    }
+
+
+    /* Responsive Parameters */
+    @media screen and (max-width: 768px) {
+        /* Add your responsive CSS here */
+       
+    }
+
+    @media screen and (max-width: 480px) {
+      nav{
+        display: none;
+      }
+      .head-container{
+        display: flex;
+        flex-direction: row;
+
+      }
+      .logo{
+        width: 20rem;
+        height: auto;
+      }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .menu-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: white;
+    }
+
+    .more-info{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
